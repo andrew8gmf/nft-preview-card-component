@@ -5,9 +5,45 @@
     padding: 25px;
     width: 100%;
 
-    &__image {
-        border-radius: 15px;
+    &__container {
+        position: relative;
         width: 100%;
+        
+        &__image {
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        &__overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            background-color: var(--primary-cyan);
+            border-radius: 15px;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none;
+        }
+
+        &:hover &__overlay {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        &:hover &__overlay + &__icon {
+            display: block;
+        }
     }
 
     &__title {
@@ -15,6 +51,7 @@
 
         &:hover {
             color: var(--primary-cyan);
+            cursor: pointer;
         }
     }
 
@@ -28,7 +65,7 @@
             color: var(--primary-cyan);
             display: flex;
 
-            &__image {
+            &__icon {
                 margin-right: 10px;
                 width: 15px;
             }
@@ -38,7 +75,7 @@
             align-items: center;
             display: flex;
 
-            &__image {
+            &__icon {
                 margin-right: 10px;
                 width: 15px;
             }
@@ -65,6 +102,11 @@
 
         &__text strong {
             color: var(--neutral-white);
+
+            &:hover {
+                color: var(--primary-cyan);
+                cursor: pointer;
+            }
         }
     }
 }
