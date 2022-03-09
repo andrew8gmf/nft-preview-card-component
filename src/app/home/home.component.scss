@@ -1,4 +1,4 @@
-app-home {
+.main {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -6,8 +6,8 @@ app-home {
     justify-content: space-between;
     padding-top: 25px;
     width: 100%;
-    
-    .card {
+
+    &__card {
         background: var(--neutral-card-bg);
         border-radius: 15px;
         box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
@@ -121,7 +121,7 @@ app-home {
         }
     }
 
-    .attribution {
+    &__attribution {
         font-size: 11px;
         padding: 25px;
         text-align: center;
