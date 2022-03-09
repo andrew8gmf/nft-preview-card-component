@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-html, body, app-root { height: 100%; }
+/*html, body, app-root { height: 100%; }
 body {
     align-items: center;
     background: var(--neutral-main-bg);
@@ -12,6 +12,23 @@ body {
     font-size: 18px;
     justify-content: center;
     margin: 0;
+}*/
+
+html, body { height: 100%; }
+body {
+    align-items: center;
+    background: var(--neutral-main-bg);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+app-root {
+    color: var(--primary-soft-blue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
 }
 
 :root {
