@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-html, body { height: 100%; }
+html, body, app-root { height: 100%; }
 body {
     align-items: center;
     background: var(--neutral-main-bg);
