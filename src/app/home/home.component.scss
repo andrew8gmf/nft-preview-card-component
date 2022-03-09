@@ -1,4 +1,4 @@
-.main {
+app-home {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     justify-content: space-between;
     padding-top: 25px;
     width: 100%;
-
+    
     &__card {
         background: var(--neutral-card-bg);
         border-radius: 15px;
