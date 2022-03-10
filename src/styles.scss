@@ -19,16 +19,6 @@ app-root {
     width: 100%;
 }
 
-app-home {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 25px);
-    justify-content: space-between;
-    padding-top: 25px;
-    width: 100%;
-}
-
 :root {
     --primary-soft-blue: hsl(215, 51%, 70%);
     --primary-cyan: hsl(178, 100%, 50%);
